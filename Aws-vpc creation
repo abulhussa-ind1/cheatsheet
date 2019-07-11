@@ -1,0 +1,11 @@
+confirm the ip address range you are planning to use. 10.10.0.0./16
+create a vpc with name coke and enable DNS hostnames
+create subnets 1,2,3as shown below and enable automatic public ip
+ subnet1. 10.10.1.0/24 -1a
+ subnet2.10.10.2.0/24 -1b
+ subnet3.10.10.3.0/24 -1c
+ create a internet gateway and attach to vpc
+ create routing table with name coke-main-table and assosiate subnets to it. Add routes towards igw 
+ create security group and allow all ports
+ create a keypair and download the private keypair
+ Deploy a vm and connect to it using putty
